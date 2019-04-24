@@ -1,0 +1,8 @@
+<h1>Songs</h1>
+<table style="width:70%">
+
+  <% @songs.each do |song| %>
+  <tbody><tr><%= link_to song.title, song_path(song) %></tr></tbody>
+  <% end %>
+
+</table>
