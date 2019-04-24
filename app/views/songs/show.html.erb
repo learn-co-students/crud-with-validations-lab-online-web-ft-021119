@@ -1,0 +1,21 @@
+<h3>Song Title:</h3>
+<h1><%= @song.title %></h1>
+<br>
+<br>
+<h3>Released?</h3>
+<p><%= @song.released %></p>
+<br>
+<br>
+<h3>Release Year:</h3>
+<p><%= @song.release_year %></p>
+<br>
+<br>
+<h3>Artist Name: </h3>
+<p><%= @song.artist_name %></p>
+<br>
+<br>
+<h3>Genre</h3>
+<p><%= @song.genre %></p>
+<br>
+
+<a href="/songs/<%=@song.id %>/edit"><input type="submit" name="edit_song" value="Edit_Song"></a>
