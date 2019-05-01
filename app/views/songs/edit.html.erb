@@ -1,0 +1,6 @@
+<h1>Edit this Song</h1>
+
+<%= render partial:'form', locals: {song: @song} %>
+
+<br>
+  <a href="/songs/<%= @song.id %>/delete"><input type="submit" name="delete song" value="Delete Song"></a>
