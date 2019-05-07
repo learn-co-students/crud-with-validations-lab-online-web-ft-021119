@@ -1,0 +1,8 @@
+<h1>Songs</h1>
+<div>
+<%= @songs.each do |song| %>
+  <tbody>
+    <tr><%= link_to song.title, song %></tr>
+  </tbody>
+<% end %>
+</div>
